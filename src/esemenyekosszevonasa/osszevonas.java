@@ -17,6 +17,8 @@ public class osszevonas extends javax.swing.JFrame {
     
     public osszevonas() {
         initComponents();
+        osszeg = 0;
+        jTextField1.setText(osszeg + "Ft");
     }
 
     /**
