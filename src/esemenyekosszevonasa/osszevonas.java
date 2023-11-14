@@ -18,8 +18,10 @@ public class osszevonas extends javax.swing.JFrame {
     public osszevonas() {
         initComponents();
         osszeg = 0;
-        jTextField1.setText(osszeg + "Ft");
+        frissit();
     }
+
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -108,9 +110,12 @@ public class osszevonas extends javax.swing.JFrame {
             osszeg -= 200;
         }
         
-        jTextField1.setText(osszeg + "Ft");
+        frissit();
     }//GEN-LAST:event_osszesito
-
+    private void frissit() {
+        jTextField1.setText(osszeg + "Ft");
+    }
+    
     /**
      * @param args the command line arguments
      */
